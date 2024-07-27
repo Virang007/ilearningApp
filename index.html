@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+            /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+            /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+        }
+        .main-body {
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 420px;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+        }
+        .app-listing {
+            /* background-color: white; */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .app-info {
+            display: flex;
+            align-items: center;
+        }
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+        }
+        .app-details {
+            margin-left: 15px;
+            flex: 1;
+        }
+        .app-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .app-developer {
+            color: #717070;
+            margin-top: 5px;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .rating span {
+            margin-left: 5px;
+            color: #444;
+        }
+        .screenshots {
+            display: flex;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        .screenshots::-webkit-scrollbar {
+            display: none; /* Hide scroll bar for WebKit browsers */
+        }
+        .screenshots {
+            -ms-overflow-style: none;  /* Hide scroll bar for Internet Explorer and Edge */
+            scrollbar-width: none;  /* Hide scroll bar for Firefox */
+        }
+        .screenshots img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .download-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .app-listing {
+                padding: 15px;
+            }
+            .app-icon {
+                margin-bottom: 5px;
+                padding: 10px;
+                border-radius: 20px;
+             
+            }
+            .app-name {
+                font-size: 1em;
+            }
+            .rating {
+                margin-top: 5px;
+            }
+            .screenshots img {
+                width: 300px;
+                height: 320px;
+                margin-right: 10px;
+            }
+            .download-button {
+                padding: 8px 0;
+            }
+        }
+    </style>
+     <script>
+        function downloadAPK() {
+            window.location.href = 'Apk';
+        }
+    </script>
+</head>
+<body>
+   <div class="main-body">
+    <div class="app-listing">
+        <div class="app-info">
+            <img src="images/icon2.png" alt="App Icon" class="app-icon">
+            <div class="app-details">
+                <div class="app-name">Programing-Learnig App</div>
+                <div class="app-developer">Av Developer</div>
+            </div>
+        </div>
+        <div class="rating">
+        </div>
+        <div class="screenshots">
+            <img src="images/sp.jpg" alt="Screenshot 1">
+            <img src="images/home.jpg" alt="Screenshot 2">
+            <img src="images/question.jpg" alt="Screenshot 2">
+            <img src="images/answer.jpg" alt="Screenshot 2">
+            <img src="images/search.jpg" alt="Screenshot 2">
+            <img src="images/about.jpg" alt="Screenshot 4">
+            <img src="images/norisk.jpg" alt="Screenshot 4">
+        </div>
+        <a href="https://drive.google.com/uc?export=download&id=1Y-fikuSmQ7fXmpG4-yJP6VaK2cHuR15B" class="download-button" download="learnigApp.apk">Install</a>
+    </div>
+    <div class="footer">
+        <p style="text-align: center;">How Download</p>
+        <div class="screenshots">
+            <img src="images/installid.jpg" alt="Snow" >
+            <img src="images/install.jpg" alt="Snow">
+
+        </div>
+        <p style="line-height: 1.;">About the App : <span style="color: #717070;">
+            A programming learning app provides interactive lessons and coding exercises designed to teach various programming languages and concepts.learning and practical application.</span></p>
+        <p>View the source code on <a href="https://github.com/Virang007?tab=repositories" target="_blank">GitHub</a>.</p>
+        <p>Developer by <a href="https://github.com/Virang007" target="_blank">Virang Acharya</a>.</p>
+    </div>
+   </div>
+</body>
+</html>
+
+
+
