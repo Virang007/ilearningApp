@@ -4,7 +4,7 @@ A simple Play Store clone built using HTML and CSS. This project demonstrates a 
 
 ## Demo
 
-[Live Demo](#) — _(https://virang007.github.io/ilearningApp/)_
+[Live Demo](#) — _(https://virangacharya.github.io/ilearningApp/)_
 
 ## Screenshots
 
